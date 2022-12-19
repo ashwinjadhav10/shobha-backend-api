@@ -4,7 +4,12 @@ const config = {
             port: 8001
         },
         pgconfig: {
-            skmpgconfig: { host: "", user: "", database: "", password: "", port: "" }
+            skmpgconfig: { host: "localhost", user: "postgres", database: "postgres", password: "postgres", port: "5432" },
+            skm_host: "localhost",
+            skm_user: "postgres",
+            skm_database: "postgres",
+            skm_password: "postgres",
+            skm_port: "5432"
         }
 
     }
