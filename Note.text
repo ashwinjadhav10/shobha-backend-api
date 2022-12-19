@@ -1,0 +1,3 @@
+Note : Run below command when below error is recived from Mac 
+You have not agreed to the Xcode license agreements. You must agree to both license agreements below in order to use Xcode.
+sudo xcodebuild -license accept

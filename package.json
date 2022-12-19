@@ -1,0 +1,24 @@
+{
+  "name": "shobha-backend-api",
+  "version": "1.0.0",
+  "description": "Shobha Kumbhar Matrimony Site",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ashwinjadhav10/shobha-backend-api.git"
+  },
+  "author": "Ashwin Jadhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwinjadhav10/shobha-backend-api/issues"
+  },
+  "homepage": "https://github.com/ashwinjadhav10/shobha-backend-api#readme",
+  "dependencies": {
+    "body-parser-ext": "^1.0.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1"
+  }
+}

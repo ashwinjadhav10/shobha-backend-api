@@ -1,0 +1,45 @@
+Node Js Interview Questions : 
+
+1) What us cluster ? 
+
+ - The cluster module supports two methods of distributing incoming connections.
+
+The first one (and the default one on all platforms except Windows) is the round-robin approach, where the primary process listens on a port, accepts new connections and distributes them across the workers in a round-robin fashion, with some built-in smarts to avoid overloading a worker process.
+
+The second approach is where the primary process creates the listen socket and sends it to interested workers. The workers then accept incoming connections directly.
+
+2) cluster.isMaster ? 
+
+cluster.isMaster#
+Added in: v0.8.1Deprecated since: v16.0.0
+Deprecated alias for cluster.isPrimary.
+
+
+3) cluster.fork(); ? 
+
+When a new worker is forked the cluster module will emit a 'fork' event. This can be used to log worker activity, and create a custom timeout.
+
+4) let jwt = require('jsonwebtoken');
+
+Use
+JWTs can be used in various ways:
+
+Authentication: When a user successfully logs in using their credentials, an ID token is returned. According to the OpenID Connect (OIDC) specs, an ID token is always a JWT.
+
+Authorization: Once a user is successfully logged in, an application may request to access routes, services, or resources (e.g., APIs) on behalf of that user. To do so, in every request, it must pass an Access Token, which may be in the form of a JWT. Single Sign-on (SSO) widely uses JWT because of the small overhead of the format, and its ability to easily be used across different domains.
+
+Information Exchange: JWTs are a good way of securely transmitting information between parties because they can be signed, which means you can be sure that the senders are who they say they are. Additionally, the structure of a JWT allows you to verify that the content hasn't been tampered with.
+
+More details Please visit on below link : https://auth0.com/docs/secure/tokens/json-web-tokens#security
+
+
+5) What Is Body-parser?
+
+Body-parser parses is an HTTP request body that usually helps when you need to know more than just the URL being hit.
+Specifically in the context of a POST, PATCH, or PUT HTTP request where the information you want is contained in the body.
+Using body-parser allows you to access req.body from within routes and use that data.
+For example: To create a user in a database.    
+
+
+
+
