@@ -35,7 +35,7 @@ if (cluster.isMaster) {
     app.use(bodyParse.urlencoded({
         limit: '60000000',
         extended: true
-    }))
+    }));
 
     let port = appConfig.server.port;
     //Route for API

@@ -7,11 +7,10 @@ const config = {
             skmpgconfig: { host: "", user: "", database: "", password: "", port: "" }
         }
 
-    },
-    stage: {
-        server: {
-            port: 8000
-        }
     }
-}
+};
+
+const env = 'live';
+config[env].env = env;
+module.exports = config[env];
 
